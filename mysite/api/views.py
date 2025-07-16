@@ -1,8 +1,8 @@
 from django.shortcuts import render
-from rest_framework import generics, status
+from rest_framework import generics, status, viewsets
 from rest_framework.response import Response
-from .models import *
-from .serializers import *
+from .models import BlogPost
+from .serializers import BlogPostSerializers
 from rest_framework.views import APIView
 
 class BlogPostListCreate(generics.ListCreateAPIView):
